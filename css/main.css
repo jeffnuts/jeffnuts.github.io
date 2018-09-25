@@ -9,30 +9,16 @@
 }
 
 @font-face {
-    font-family: AUTHENTIC Sans;
-    src: url(AUTHENTIC Sans.otf);
+    font-family: 'AUTHENTIC Sans';
+    src: url('../fonts/AUTHENTIC Sans.otf');
 }
-
-@font-face {
-    font-family: 'BrushScriptStd';
-    src: url('BrushScriptStd.otf');
-}
-
 @font-face {
     font-family: 'HoboStd';
-    src: url('HoboStd.otf');
-}
-@font-face {
-    font-family: 'FranklinGothic';
-    src: url('Franklin Gothic Regular.ttf');
+    src: url('../fonts/HoboStd.otf');
 }
 @font-face {
     font-family: 'Aileron-Light';
-    src: url('Aileron-Light.otf');
-}
-@font-face {
-    font-family: 'Futura';
-    src: url('FuturaNewBook.otf');
+    src: url('../fonts/Aileron-Light.otf');
 }
 
 
@@ -69,7 +55,7 @@ html{
     color: #F7F7F7;
     margin: 0px;
     padding: 0px;
-    font-family: "Helvetica Neue ", Helvetica , sans-serif;
+    font-family: "Helvetica Neue", Helvetica , sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     
