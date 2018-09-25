@@ -285,6 +285,12 @@ html.color-scheme-5 h1 {
 .col9 {width: 100%;}
 .col10 {width: 100%;}
     
+ #scroll {
+    position:fixed;
+    left: 88%;
+    }
+
+    
 .row {
     display: block;
     margin: 0px;
