@@ -209,7 +209,9 @@ nav{
     -ms-filter:"alpha(opacity=100)";
 }
 
-
+#space{
+    height: 0px;
+}
 
 
 @media only screen and (min-width: 1690px) {
@@ -312,6 +314,9 @@ h3 {
 }
     #location {
         padding-right: 0px;
+    }
+    #space {
+        height: 100px;
     }
 }
 
