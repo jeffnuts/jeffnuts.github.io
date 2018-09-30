@@ -93,6 +93,7 @@ h2 {
     padding: 0px;
     margin: 0px;
     color: black;
+    font-weight: 400;
 } 
 h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -205,72 +206,13 @@ nav{
 }
 #scroll:hover {
     background-color:darkgrey;
-    opacity:1;filter:"alpha(opacity=100)";
+    opacity:1;
+    filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
 
 #space{
     height: 0px;
-}
-
-
-@media only screen and (min-width: 1690px) {
- nav{
-    width: 100%;
-    background-color: transparent;
-    height: 0px;
-    padding: 0px;
-    }
-
-
-html.color-scheme-1 h1 {
-    text-align: left;
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-}
-
-
-html.color-scheme-2 h1 {
-    text-align: left;
-    font-family: 'Aileron-Light', sans-serif;
-    font-size: 6vw;
-    line-height: 6vw;
-    letter-spacing: -0.01em;
-}
-
-html.color-scheme-3 h1 {
-    text-align: left;
-    font-family: 'HoboStd', sans-serif;
-    font-size: 6vw;
-    line-height: 6vw;
-    letter-spacing: -0.01em;
-    padding-top: 1vw;
-    
-}
-
-html.color-scheme-4 h1 {
-    text-align: left; 
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-weight: 300;
-    font-size: 6vw;
-    line-height: 6vw;
-    letter-spacing: -0.02em;
-}
-
-html.color-scheme-5 h1 {
-    text-align: left; 
-    font-family: 'AUTHENTIC Sans', serif;
-    font-size: 6vw;
-    line-height: 6vw;
-    font-weight: 100;
-    padding-top: 10px;
-    letter-spacing: -0.04em;
-}
-    
 }
 
 @media only screen and (max-width: 600px) {
@@ -306,6 +248,7 @@ h2 {
     padding: 0px;
     margin: 0px;
     color: black;
+    font-weight: 300;
 } 
 h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -335,6 +278,11 @@ html.color-scheme-1 h1 {
     letter-spacing: -0.02em;
 }
 
+html.color-scheme-1 span{
+    letter-spacing: -0.07em;
+
+}
+
 
 html.color-scheme-2 h1 {
     text-align: left;
@@ -343,6 +291,12 @@ html.color-scheme-2 h1 {
     line-height: 8.2vw;
     letter-spacing: -0.01em;
 }
+
+html.color-scheme-2 span{
+    letter-spacing: -0.1em;
+
+}
+
 
 html.color-scheme-3 h1 {
     text-align: left;
@@ -354,14 +308,23 @@ html.color-scheme-3 h1 {
     
 }
 
+html.color-scheme-3 span{
+    letter-spacing: -0.14em;
+    
+}
+
 html.color-scheme-4 h1 {
     text-align: left; 
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
     font-weight: 300;
     font-size:8.2vw;
     line-height: 8.2vw;
     letter-spacing: -0.02em;
+}
+
+html.color-scheme-4 span{
+    letter-spacing: -0.1em;
+
 }
 
 html.color-scheme-5 h1 {
@@ -372,6 +335,11 @@ html.color-scheme-5 h1 {
     font-weight: 100;
     padding-top: 10px;
     letter-spacing: -0.04em;
+}
+
+html.color-scheme-5 span{
+    letter-spacing: -0.04em;
+
 }
 
 
