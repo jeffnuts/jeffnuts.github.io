@@ -3,7 +3,7 @@ $(function() {
 });
 
 $( document ).ready(function() {
-    var listOfClasses = ["color-scheme-1","color-scheme-2","color-scheme-3","color-scheme-4","color-scheme-5"];
+    var listOfClasses = ["color-scheme-1","color-scheme-2","color-scheme-3","color-scheme-4"];
     var randomNum = Math.floor(Math.random() * listOfClasses.length); 
     $("html").addClass(listOfClasses[randomNum]);
 });
@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
 $(document).ready(function(){ 
     $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 950) { 
+        if ($(this).scrollTop() > 985) { 
             $('#scroll').fadeIn(); 
         } else { 
             $('#scroll').fadeOut(); 

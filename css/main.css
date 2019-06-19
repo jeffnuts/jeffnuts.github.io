@@ -9,16 +9,20 @@
 }
 
 @font-face {
-    font-family: 'AUTHENTIC Sans';
-    src: url('../fonts/AUTHENTIC Sans.otf');
+    font-family: 'Whyte';
+    src: url('../fonts/WhyteInktrap-Medium.otf');
 }
 @font-face {
     font-family: 'HoboStd';
     src: url('../fonts/HoboStd.otf');
 }
+
+
 @font-face {
-    font-family: 'Aileron-Light';
-    src: url('../fonts/Aileron-Light.otf');
+    font-family: 'Whyte Inktrap';
+    src: url('../fonts/WhyteInktrap-Medium.woff') format('woff'), url('../fonts/WhyteInktrap-Medium.woff2') format('woff2'), url('../fonts/Whyte-Medium.eot') format('embedded-opentype');
+    font-style: normal;
+    font-stretch: normal;
 }
 
 
@@ -50,16 +54,18 @@ textarea {
 }
 
 
-
 html{
     color: #F7F7F7;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
     font-family: "Helvetica Neue", Helvetica , sans-serif;
-    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    
+    font-weight: 400;
     }
+
+
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #F7F7F7;
@@ -78,18 +84,20 @@ body.fade-out {
     opacity: 0;
     transition: none;
 }
+
   
 h1 {
     font-family: sans-serif;
     font-size:1px;
     padding: 0px;
     margin: 0px;
+    white-space: nowrap;
 }
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 46px;
-    line-height: 50px;
+    line-height: 52px;
     padding: 0px;
     margin: 0px;
     color: black;
@@ -99,16 +107,40 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.3;
     letter-spacing: normal;
     padding:0px;
     margin: 0px;
     color: black;
 }
 
+.fadelink{
+    color: black;
+    font-weight: 400;
+    display: inline;
+    letter-spacing: normal;
+      -o-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -ms-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -moz-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -webkit-transition:color 0.6s ease-out, background 0.6s ease-in;
+    transition:color 0.6s ease-out, background 0.6s ease-in;
+}
+
+.fadelink:hover{
+    color: lightgrey;
+    font-weight: 400;
+    display: inline;
+    letter-spacing: normal;
+     -o-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -ms-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -moz-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -webkit-transition:color 0.6s ease-out, background 0.6s ease-in;
+    transition:color 0.6s ease-out, background 0.6s ease-in;
+}
 
 #location{
     padding-right: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -133,8 +165,8 @@ a:hover {
   margin-top: 0.5px;
   right: 0;
   background: black;
-  transition: width .3s ease;
-  -webkit-transition: width .3s ease;
+  transition: width .6s ease;
+  -webkit-transition: width .6s ease;
 }
  
 .underline:hover:after{
@@ -154,6 +186,33 @@ a:hover {
     background-color: transparent;
 }
 
+.spacer{
+    height: 0px;
+    width: 100%;
+}
+
+
+img{
+    opacity: 1.0;
+  filter: alpha(opacity=100);
+    -o-transition:opacity 0.33s ease-out, background 0.333s ease-in;
+    -ms-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    -moz-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    -webkit-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    transition:opacity 0.333s ease-out, background 0.333s ease-in;
+}
+
+img:hover{
+     opacity: 0.75;
+    filter: alpha(opacity=75)
+    -o-transition:opacity 0.33s ease-out, background 0.333s ease-in;
+    -ms-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    -moz-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    -webkit-transition:opacity 0.333s ease-out, background 0.333s ease-in;
+    transition:opacity 0.333s ease-out, background 0.333s ease-in;
+
+    
+}
 
 
 
@@ -171,11 +230,12 @@ a:hover {
 
 
 nav{
+    margin: auto;
     width: 100%;
-    background-color: transparent;
     height: 0px;
     padding: 0px;
-    position: absolute;
+    display: flex;
+    max-width: 1680px;
     }
 
 
@@ -192,6 +252,12 @@ nav{
     -webkit-border-radius:90px;
     -moz-border-radius:90px;
     border-radius:90px
+     -o-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -ms-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -moz-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -webkit-transition:color 0.6s ease-out, background 0.6s ease-in;
+    transition:color 0.6s ease-out, background 0.6s ease-in;
+    filter:"alpha(opacity=100)";
 }
 #scroll span {
     position:absolute;
@@ -203,19 +269,34 @@ nav{
     width:0;
     border:8px solid transparent;
     border-bottom-color:none;
+    color:inherit;
+    -o-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -ms-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -moz-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -webkit-transition:color 0.6s ease-out, background 0.6s ease-in;
+    transition:color 0.6s ease-out, background 0.6s ease-in;
+    filter:"alpha(opacity=100)";
+  
 }
 #scroll:hover {
-    background-color:darkgrey;
+    background-color:lightgrey;
     opacity:1;
+    -o-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -ms-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -moz-transition:color 0.6s ease-out, background 0.6s ease-in;
+    -webkit-transition:color 0.6s ease-out, background 0.6s ease-in;
+    transition:color 0.6s ease-out, background 0.6s ease-in;
     filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
+    
+    
+    
 }
 
 #space{
     height: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 .col1 {width: 100%;} 
 .col2 {width: 100%;}
 .col3 {width: 100%;}
@@ -241,6 +322,12 @@ nav{
     padding-right: 10px;
     background-color: transparent;
 }
+    
+.spacer{
+    height: 135px;
+    width: 100%;
+}    
+    
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 26px;
@@ -254,14 +341,15 @@ h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.3;
     letter-spacing: normal;
     padding:0px;
     margin: 0px;
     color: black;
 }
     #location {
-        padding-right: 0px;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
     #space {
         height: 100px;
@@ -272,75 +360,81 @@ h3 {
 html.color-scheme-1 h1 {
     text-align: left;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:8.1vw;
-    line-height: 8.1vw;
+    font-size:8.3vw;
+    line-height: 1;
     font-weight: 600;
     letter-spacing: -0.02em;
+    margin-top: 10px;
 }
 
 html.color-scheme-1 span{
     letter-spacing: -0.07em;
+    margin-top: 10px;
 
 }
 
 
 html.color-scheme-2 h1 {
     text-align: left;
-    font-family: 'Aileron-Light', sans-serif;
-    font-size: 8.2vw;
-    line-height: 8.2vw;
-    letter-spacing: -0.01em;
-}
-
-html.color-scheme-2 span{
-    letter-spacing: -0.1em;
-
-}
-
-
-html.color-scheme-3 h1 {
-    text-align: left;
     font-family: 'HoboStd', sans-serif;
     font-size:8vw;
-    line-height: 8vw;
+    line-height: 1;
     letter-spacing: -0.01em;
     padding-top: 1vw;
     
 }
 
-html.color-scheme-3 span{
+html.color-scheme-2 span{
     letter-spacing: -0.14em;
     
 }
 
-html.color-scheme-4 h1 {
+html.color-scheme-3 h1 {
     text-align: left; 
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size:8.2vw;
-    line-height: 8.2vw;
+    font-size:8.4vw;
+    line-height: 1;
     letter-spacing: -0.02em;
+    margin-top: 10px;
 }
 
-html.color-scheme-4 span{
+html.color-scheme-3 span{
     letter-spacing: -0.1em;
 
 }
 
-html.color-scheme-5 h1 {
+html.color-scheme-4 h1 {
     text-align: left; 
-    font-family: 'Times New Roman', serif;
-    font-size:8.2vw;
-    line-height: 8.1vw;
-    font-weight: 100;
-    padding-top: 10px;
-    letter-spacing: -0.04em;
+    font-family: 'Whyte Inktrap', serif;
+    font-size:8.35vw;
+    line-height: 1;
+    padding-top: 0px;
+    letter-spacing: -0.02em;
+    box-sizing: content-box;
 }
 
-html.color-scheme-5 span{
+html.color-scheme-4 span{
     letter-spacing: -0.04em;
+    margin-top: 10px;
 
 }
+
+@media only screen and (min-width: 1700px) {
+
+html.color-scheme-1 h1 {
+        font-size: 130px;}
+    
+html.color-scheme-2 h1 {
+        font-size: 130px;}
+
+html.color-scheme-3 h1 {
+        font-size: 130px;}
+    
+html.color-scheme-4 h1 {
+        font-size: 130px;}
+}
+
 
 
 
@@ -385,11 +479,6 @@ html.color-scheme-5 span{
     white-space: nowrap; /* 1 */
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
