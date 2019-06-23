@@ -85,6 +85,7 @@ body.fade-out {
     transition: none;
 }
 
+.line-break { display:block; }
   
 h1 {
     font-family: sans-serif;
@@ -397,7 +398,7 @@ html.color-scheme-3 h1 {
     text-align: left; 
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size:8.4vw;
+    font-size:8.2vw;
     line-height: 1;
     letter-spacing: -0.02em;
     margin-top: 10px;
@@ -410,7 +411,7 @@ html.color-scheme-3 span{
 
 html.color-scheme-4 h1 {
     text-align: left; 
-    font-family: 'Whyte Inktrap', serif;
+    font-family: 'Whyte Inktrap', sans-serif;
     font-size:8.35vw;
     line-height: 1;
     padding-top: 0px;
@@ -422,6 +423,22 @@ html.color-scheme-4 span{
     letter-spacing: -0.04em;
     margin-top: 10px;
 
+}
+
+html.color-scheme-5 h1 {
+    text-align: left; 
+    font-family: 'Times', serif;
+    font-size:8.35vw;
+    line-height: 1;
+    padding-top: 0px;
+    font-weight: 100;
+    letter-spacing: -0.02em;
+    box-sizing: content-box;
+}
+
+html.color-scheme-5 span{
+    letter-spacing: -0.04em;
+    margin-top: 10px;
 }
 
 @media only screen and (min-width: 1700px) {
@@ -436,6 +453,9 @@ html.color-scheme-3 h1 {
         font-size: 130px;}
     
 html.color-scheme-4 h1 {
+        font-size: 130px;}
+
+html.color-scheme-5 h1 {
         font-size: 130px;}
 }
 
@@ -453,18 +473,16 @@ html.color-scheme-3 h1 {
 html.color-scheme-4 h1 {
         font-size: 35px;}
     
-    #date{
-    padding-left:12%;
+html.color-scheme-5 h1 {
+        font-size: 35px;}
+    
+#date{
+    padding-left:12%;}
+        
 }
-}
-
-
-
-
-
-
-
-
+ @media screen and (min-width: 800px){
+            .line-break { display: inline; }
+        }
 
 
 /* ==========================================================================

@@ -3,7 +3,7 @@ $(function() {
 });
 
 $( document ).ready(function() {
-    var listOfClasses = ["color-scheme-1","color-scheme-2","color-scheme-3","color-scheme-4"];
+    var listOfClasses = ["color-scheme-1","color-scheme-2","color-scheme-3","color-scheme-4","color-scheme-5"];
     var randomNum = Math.floor(Math.random() * listOfClasses.length); 
     $("html").addClass(listOfClasses[randomNum]);
 });
