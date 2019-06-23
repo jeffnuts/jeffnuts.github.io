@@ -485,11 +485,6 @@ html.color-scheme-5 h1 {
 .line-break { 
     display: inline;
     font-kerning: 1;}
-     
-     h1 {
-         letter-spacing: normal;
-         font-kerning:none; 
-     } 
         }
 
 
